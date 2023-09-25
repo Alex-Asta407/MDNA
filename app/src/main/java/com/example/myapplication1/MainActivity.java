@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button button;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("FirstApp", "Appreciate it!");
+                Toast.makeText(MainActivity.this, "Hello My Friend", Toast.LENGTH_SHORT).show();
             }
         });
     }
